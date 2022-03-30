@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "drippy:block/stem_cell_duplicator"
+    }
+  }
+}

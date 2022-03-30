@@ -1,0 +1,7 @@
+{
+  "parent": "drippy:custom/dragon_egg",
+  "textures": {
+    "all": "drippy:blocks/",
+    "particle": "drippy:blocks/egg"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_fv": 24,
+  "_type": "tab",
+  "definition": {
+    "name": "Genetics",
+    "icon": {
+      "value": "CUSTOM:FullSyringe"
+    },
+    "showSearch": true
+  }
+}

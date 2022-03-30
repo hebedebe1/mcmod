@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "drippy:stem_cell"
+    },
+    "1": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "2": {
+      "item": "drippy:stem_cell"
+    },
+    "3": {
+      "item": "minecraft:potion"
+    },
+    "4": {
+      "item": "minecraft:spyglass"
+    },
+    "5": {
+      "item": "minecraft:potion"
+    },
+    "6": {
+      "item": "drippy:stem_cell"
+    },
+    "7": {
+      "item": "drippy:full_syringe"
+    },
+    "8": {
+      "item": "drippy:stem_cell"
+    }
+  },
+  "result": {
+    "item": "drippy:genetic_foundation",
+    "count": 1
+  }
+}

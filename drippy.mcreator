@@ -1,0 +1,291 @@
+{
+  "mod_elements": [
+    {
+      "name": "Cum",
+      "type": "fluid",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "villager_cum",
+      "metadata": {
+        "gb": true
+      },
+      "path": "~/Liquids/Cum"
+    },
+    {
+      "name": "Playercum",
+      "type": "fluid",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "playercum",
+      "metadata": {
+        "gb": true
+      },
+      "path": "~/Liquids/Cum"
+    },
+    {
+      "name": "FullSyringe",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "full_syringe",
+      "path": "~/Items"
+    },
+    {
+      "name": "EmptySyringe",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_syringe",
+      "path": "~/Items"
+    },
+    {
+      "name": "Genetics",
+      "type": "tab",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "genetics"
+    },
+    {
+      "name": "EmptySyringeLivingEntityIsHitWithItem",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_syringe_living_entity_is_hit_with_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Eggblock",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eggblock",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "EggblockOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eggblock_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Shoddygeneticextractor",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shoddygeneticextractor",
+      "path": "~/Items"
+    },
+    {
+      "name": "StemCell",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stem_cell",
+      "path": "~/Items"
+    },
+    {
+      "name": "StemCellItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stem_cell_item_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Stemcellpig",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "stemcellpig",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "GeneticFoundation",
+      "type": "item",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "genetic_foundation",
+      "path": "~/Items"
+    },
+    {
+      "name": "GeneticFoundationRecipe",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "genetic_foundation_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "EggBlockRecipe",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "egg_block_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "StemCellDuplicator",
+      "type": "block",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stem_cell_duplicator",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "StemCellDuplicatorGUI",
+      "type": "gui",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stem_cell_duplicator_gui",
+      "path": "~/GUI"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "isPregnant",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
+    },
+    {
+      "name": "pregnancyType",
+      "type": "string",
+      "scope": "player_lifetime",
+      "value": ""
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "block.drippy.stem_cell_duplicator": "Stem Cell Duplicator",
+      "fluid.drippy.villager_cum": "Cum",
+      "itemGroup.tabgenetics": "Genetics",
+      "item.drippy.playercum_bucket": "Cum Bucket",
+      "item.drippy.shoddygeneticextractor": "Shoddygeneticextractor",
+      "item.drippy.villager_cum_bucket": "Cum Bucket",
+      "item.drippy.stem_cell": "Stem Cell",
+      "item.drippy.genetic_foundation": "Genetic Foundation",
+      "item.drippy.empty_syringe": "Empty Syringe",
+      "block.drippy.playercum": "Cum",
+      "block.drippy.villager_cum": "Cum",
+      "fluid.drippy.playercum": "Cum",
+      "item.drippy.full_syringe": "Full Syringe",
+      "block.drippy.eggblock": "Egg"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Liquids",
+        "children": [
+          {
+            "name": "Cum",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Items",
+        "children": []
+      },
+      {
+        "name": "Blocks",
+        "children": []
+      },
+      {
+        "name": "Misc",
+        "children": []
+      },
+      {
+        "name": "Procedures",
+        "children": []
+      },
+      {
+        "name": "Recipes",
+        "children": []
+      },
+      {
+        "name": "GUI",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "drippy",
+    "modName": "drippy",
+    "version": "1.0.0",
+    "author": "Ollie, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.17.1",
+    "modElementsPackage": "net.mcreator.drippy",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100354000
+}

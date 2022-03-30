@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "drippy:blocks/stemcellduplicator",
+    "up": "drippy:blocks/stemcellduplicator",
+    "north": "drippy:blocks/stemcellduplicator",
+    "east": "drippy:blocks/stemcellduplicator",
+    "south": "drippy:blocks/stemcellduplicator",
+    "west": "drippy:blocks/stemcellduplicator",
+    "particle": "drippy:blocks/stemcellduplicator"
+  }
+}

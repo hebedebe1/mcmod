@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:porkchop"
+    },
+    {
+      "item": "drippy:shoddygeneticextractor"
+    }
+  ],
+  "result": {
+    "item": "drippy:stem_cell",
+    "count": 1,
+    "dna_type": "pig"
+  }
+}
