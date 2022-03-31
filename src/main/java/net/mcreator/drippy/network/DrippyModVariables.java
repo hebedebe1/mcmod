@@ -75,6 +75,7 @@ public class DrippyModVariables {
 			if (!event.isWasDeath()) {
 				clone.isPregnant = original.isPregnant;
 				clone.pregnancyType = original.pregnancyType;
+				clone.pregancyTimer = original.pregancyTimer;
 			}
 		}
 	}
@@ -112,6 +113,7 @@ public class DrippyModVariables {
 	public static class PlayerVariables {
 		public boolean isPregnant = false;
 		public String pregnancyType = "";
+		public double pregancyTimer = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -122,6 +124,7 @@ public class DrippyModVariables {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putBoolean("isPregnant", isPregnant);
 			nbt.putString("pregnancyType", pregnancyType);
+			nbt.putDouble("pregancyTimer", pregancyTimer);
 			return nbt;
 		}
 
@@ -129,6 +132,7 @@ public class DrippyModVariables {
 			CompoundTag nbt = (CompoundTag) Tag;
 			isPregnant = nbt.getBoolean("isPregnant");
 			pregnancyType = nbt.getString("pregnancyType");
+			pregancyTimer = nbt.getDouble("pregancyTimer");
 		}
 	}
 
@@ -156,6 +160,7 @@ public class DrippyModVariables {
 							.orElse(new PlayerVariables()));
 					variables.isPregnant = message.data.isPregnant;
 					variables.pregnancyType = message.data.pregnancyType;
+					variables.pregancyTimer = message.data.pregancyTimer;
 				}
 			});
 			context.setPacketHandled(true);

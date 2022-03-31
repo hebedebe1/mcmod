@@ -11,14 +11,14 @@ import net.minecraft.server.level.ServerPlayer;
 import net.mcreator.drippy.init.DrippyModItems;
 
 public class EmptySyringeLivingEntityIsHitWithItemProcedure {
-	public static void execute(Entity entity) {
-		if (entity == null)
+	public static void execute(Entity entity, Entity sourceentity) {
+		if (entity == null || sourceentity == null)
 			return;
 		ItemStack Syringe = ItemStack.EMPTY;
 		if (entity instanceof Player) {
 			Syringe = new ItemStack(DrippyModItems.FULL_SYRINGE);
 			(Syringe).getOrCreateTag().putString("dna_type", "player");
-			if (entity instanceof LivingEntity _entity) {
+			if (sourceentity instanceof LivingEntity _entity) {
 				ItemStack _setstack = (Syringe);
 				_setstack.setCount(1);
 				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
@@ -28,7 +28,7 @@ public class EmptySyringeLivingEntityIsHitWithItemProcedure {
 		} else if (entity instanceof Villager) {
 			Syringe = new ItemStack(DrippyModItems.FULL_SYRINGE);
 			(Syringe).getOrCreateTag().putString("dna_type", "villager");
-			if (entity instanceof LivingEntity _entity) {
+			if (sourceentity instanceof LivingEntity _entity) {
 				ItemStack _setstack = (Syringe);
 				_setstack.setCount(1);
 				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);

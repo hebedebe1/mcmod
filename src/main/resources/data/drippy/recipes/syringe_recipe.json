@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:iron_bars"
+    },
+    "1": {
+      "item": "minecraft:glass_bottle"
+    },
+    "2": {
+      "item": "minecraft:stone_button"
+    }
+  },
+  "result": {
+    "item": "drippy:empty_syringe",
+    "count": 1
+  }
+}

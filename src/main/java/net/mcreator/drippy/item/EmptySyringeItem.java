@@ -23,7 +23,7 @@ public class EmptySyringeItem extends Item {
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		EmptySyringeLivingEntityIsHitWithItemProcedure.execute(entity);
+		EmptySyringeLivingEntityIsHitWithItemProcedure.execute(entity, sourceentity);
 		return retval;
 	}
 }
